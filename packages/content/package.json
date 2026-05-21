@@ -1,0 +1,13 @@
+{
+  "name": "@lil-sprouts/content",
+  "version": "0.0.1",
+  "private": true,
+  "exports": {
+    "./brand": "./src/brand.ts",
+    "./programs": "./src/programs.ts",
+    "./research": "./src/research.ts"
+  },
+  "devDependencies": {
+    "typescript": "5.8.3"
+  }
+}

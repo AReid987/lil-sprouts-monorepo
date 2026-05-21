@@ -1,0 +1,65 @@
+/* @lil-sprouts/ui — Design Tokens */
+:root {
+  --ls-parchment-0:  oklch(0.97 0.016 82);
+  --ls-parchment-50: oklch(0.94 0.022 80);
+  --ls-ivory:        oklch(0.99 0.010 85);
+  --ls-oat:          oklch(0.91 0.028 78);
+  --ls-paper-fold:   oklch(0.88 0.032 76);
+
+  --ls-navy:         oklch(0.22 0.045 265);
+  --ls-navy-deep:    oklch(0.17 0.050 265);
+  --ls-navy-soft:    oklch(0.27 0.040 265);
+
+  --ls-crayon-red:    oklch(0.66 0.19 28);
+  --ls-crayon-blue:   oklch(0.66 0.14 235);
+  --ls-crayon-yellow: oklch(0.86 0.16 92);
+  --ls-crayon-green:  oklch(0.72 0.15 145);
+  --ls-crayon-orange: oklch(0.74 0.16 55);
+  --ls-crayon-purple: oklch(0.68 0.13 295);
+
+  --ls-lavender:   oklch(0.78 0.09 295);
+  --ls-candy-pink: oklch(0.82 0.09 12);
+  --ls-mint:       oklch(0.86 0.08 155);
+  --ls-peach:      oklch(0.85 0.08 50);
+
+  --ls-ink:           oklch(0.24 0.04 265);
+  --ls-ink-soft:      oklch(0.38 0.04 265);
+  --ls-ink-mute:      oklch(0.55 0.03 265);
+  --ls-ink-on-dark:   oklch(0.96 0.02 82);
+  --ls-ink-soft-dark: oklch(0.82 0.025 82);
+
+  --ls-font-display: 'Fredoka', 'Nunito', system-ui, sans-serif;
+  --ls-font-body:    'Nunito', system-ui, sans-serif;
+  --ls-font-marker:  'Caveat', cursive;
+
+  --ls-r-sm:  0.625rem;
+  --ls-r-md:  1rem;
+  --ls-r-lg:  1.375rem;
+  --ls-r-xl:  1.875rem;
+  --ls-r-pill: 999px;
+
+  --ls-shadow-1: 0 1px 0 oklch(0.32 0.05 50 / 0.10), 0 2px 4px oklch(0.32 0.05 50 / 0.08);
+  --ls-shadow-2: 0 2px 0 oklch(0.32 0.05 50 / 0.10), 0 4px 10px oklch(0.32 0.05 50 / 0.10);
+  --ls-shadow-3: 0 3px 0 oklch(0.32 0.05 50 / 0.12), 0 6px 16px oklch(0.32 0.05 50 / 0.14);
+  --ls-shadow-4: 0 5px 0 oklch(0.32 0.05 50 / 0.14), 0 12px 28px oklch(0.32 0.05 50 / 0.18);
+}
+
+:root, [data-theme="light"] {
+  --ls-bg:       var(--ls-parchment-0);
+  --ls-bg-elev:  var(--ls-ivory);
+  --ls-bg-sunk:  var(--ls-parchment-50);
+  --ls-fg:       var(--ls-ink);
+  --ls-fg-soft:  var(--ls-ink-soft);
+  --ls-fg-mute:  var(--ls-ink-mute);
+  --ls-hairline: oklch(0.84 0.03 78);
+}
+
+[data-theme="dark"] {
+  --ls-bg:       var(--ls-navy);
+  --ls-bg-elev:  var(--ls-navy-soft);
+  --ls-bg-sunk:  var(--ls-navy-deep);
+  --ls-fg:       var(--ls-ink-on-dark);
+  --ls-fg-soft:  var(--ls-ink-soft-dark);
+  --ls-fg-mute:  oklch(0.65 0.03 82);
+  --ls-hairline: oklch(0.36 0.04 265);
+}
