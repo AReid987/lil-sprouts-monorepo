@@ -11,7 +11,7 @@
   "dependencies": {
     "@lil-sprouts/content": "workspace:*",
     "@lil-sprouts/ui": "workspace:*",
-    "next": "15.3.2",
+    "next": "15.5.21",
     "react": "19.1.0",
     "react-dom": "19.1.0",
     "framer-motion": "12.12.1"
