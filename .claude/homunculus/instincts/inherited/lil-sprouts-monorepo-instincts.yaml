@@ -1,0 +1,280 @@
+# Instincts generated from https://github.com/AReid987/lil-sprouts-monorepo
+# Generated: 2026-07-26T12:11:18.200Z
+# Version: 2.0
+# NOTE: This file supplements (does not replace) any existing curated instincts.
+# High-confidence manually curated instincts should be preserved alongside these.
+
+---
+id: lil-sprouts-monorepo-commit-conventional
+trigger: "when writing a commit message"
+confidence: 0.85
+domain: git
+source: repo-analysis
+source_repo: https://github.com/AReid987/lil-sprouts-monorepo
+---
+
+# Lil Sprouts Monorepo Commit Conventional
+
+## Action
+
+Use conventional commit format with prefixes: chore
+
+## Evidence
+
+- 1 commits analyzed
+- Detected conventional commit pattern
+- Examples: chore(deps): bump the npm_and_yarn group across 3 directories with 2 updates
+
+---
+id: lil-sprouts-monorepo-commit-length
+trigger: "when writing a commit message"
+confidence: 0.6
+domain: git
+source: repo-analysis
+source_repo: https://github.com/AReid987/lil-sprouts-monorepo
+---
+
+# Lil Sprouts Monorepo Commit Length
+
+## Action
+
+Write moderate-length commit messages (~76 characters)
+
+## Evidence
+
+- Average commit message length: 76 chars
+- Based on 1 commits
+
+---
+id: lil-sprouts-monorepo-naming-files
+trigger: "when creating a new file"
+confidence: 0.8
+domain: code-style
+source: repo-analysis
+source_repo: https://github.com/AReid987/lil-sprouts-monorepo
+---
+
+# Lil Sprouts Monorepo Naming Files
+
+## Action
+
+Use camelCase naming convention
+
+## Evidence
+
+- Analyzed file naming patterns in repository
+- Dominant pattern: camelCase
+
+---
+id: lil-sprouts-monorepo-import-relative
+trigger: "when importing modules"
+confidence: 0.75
+domain: code-style
+source: repo-analysis
+source_repo: https://github.com/AReid987/lil-sprouts-monorepo
+---
+
+# Lil Sprouts Monorepo Import Relative
+
+## Action
+
+Use relative imports for project files
+
+## Evidence
+
+- Import analysis shows relative import pattern
+- Example: import { x } from '../lib/x'
+
+---
+id: lil-sprouts-monorepo-export-style
+trigger: "when exporting from a module"
+confidence: 0.7
+domain: code-style
+source: repo-analysis
+source_repo: https://github.com/AReid987/lil-sprouts-monorepo
+---
+
+# Lil Sprouts Monorepo Export Style
+
+## Action
+
+Prefer named exports
+
+## Evidence
+
+- Export pattern analysis
+- Dominant style: named
+
+---
+id: lil-sprouts-monorepo-test-separate
+trigger: "when writing tests"
+confidence: 0.8
+domain: testing
+source: repo-analysis
+source_repo: https://github.com/AReid987/lil-sprouts-monorepo
+---
+
+# Lil Sprouts Monorepo Test Separate
+
+## Action
+
+Place tests in the tests/ or __tests__/ directory, mirroring src structure
+
+## Evidence
+
+- Separate test directory pattern detected
+- Tests live in dedicated test folders
+
+---
+id: lil-sprouts-monorepo-instinct-camelcase-files
+trigger: "When creating or renaming a file"
+confidence: 0.8
+domain: code-style
+source: repo-analysis
+source_repo: AReid987/lil-sprouts-monorepo
+---
+
+# Lil Sprouts Monorepo Instinct Camelcase Files
+
+## Action
+
+Use camelCase for the file name
+
+## Evidence
+
+- Pattern in namingConventions.files
+
+---
+id: lil-sprouts-monorepo-instinct-camelcase-functions
+trigger: "When defining a function"
+confidence: 0.9
+domain: code-style
+source: repo-analysis
+source_repo: AReid987/lil-sprouts-monorepo
+---
+
+# Lil Sprouts Monorepo Instinct Camelcase Functions
+
+## Action
+
+Name the function using camelCase
+
+## Evidence
+
+- Pattern in namingConventions.functions
+
+---
+id: lil-sprouts-monorepo-instinct-pascalcase-classes
+trigger: "When defining a class"
+confidence: 0.9
+domain: code-style
+source: repo-analysis
+source_repo: AReid987/lil-sprouts-monorepo
+---
+
+# Lil Sprouts Monorepo Instinct Pascalcase Classes
+
+## Action
+
+Name the class using PascalCase
+
+## Evidence
+
+- Pattern in namingConventions.classes
+
+---
+id: lil-sprouts-monorepo-instinct-screaming-constants
+trigger: "When defining a constant"
+confidence: 0.9
+domain: code-style
+source: repo-analysis
+source_repo: AReid987/lil-sprouts-monorepo
+---
+
+# Lil Sprouts Monorepo Instinct Screaming Constants
+
+## Action
+
+Name the constant using SCREAMING_SNAKE_CASE
+
+## Evidence
+
+- Pattern in namingConventions.constants
+
+---
+id: lil-sprouts-monorepo-instinct-relative-imports
+trigger: "When importing modules"
+confidence: 0.8
+domain: code-style
+source: repo-analysis
+source_repo: AReid987/lil-sprouts-monorepo
+---
+
+# Lil Sprouts Monorepo Instinct Relative Imports
+
+## Action
+
+Use relative import paths
+
+## Evidence
+
+- Pattern in importStyle
+
+---
+id: lil-sprouts-monorepo-instinct-named-exports
+trigger: "When exporting modules or functions"
+confidence: 0.8
+domain: code-style
+source: repo-analysis
+source_repo: AReid987/lil-sprouts-monorepo
+---
+
+# Lil Sprouts Monorepo Instinct Named Exports
+
+## Action
+
+Use named exports
+
+## Evidence
+
+- Pattern in exportStyle
+
+---
+id: lil-sprouts-monorepo-instinct-separate-test-location
+trigger: "When adding or organizing tests"
+confidence: 0.7
+domain: testing
+source: repo-analysis
+source_repo: AReid987/lil-sprouts-monorepo
+---
+
+# Lil Sprouts Monorepo Instinct Separate Test Location
+
+## Action
+
+Place tests in a separate location from source code
+
+## Evidence
+
+- Pattern in architecture.testLocation
+
+---
+id: lil-sprouts-monorepo-instinct-conventional-commits-chore
+trigger: "When making a dependency update or maintenance commit"
+confidence: 0.9
+domain: git
+source: repo-analysis
+source_repo: AReid987/lil-sprouts-monorepo
+---
+
+# Lil Sprouts Monorepo Instinct Conventional Commits Chore
+
+## Action
+
+Prefix the commit message with 'chore' following conventional commit format
+
+## Evidence
+
+- Seen in commit: 'chore(deps): bump the npm_and_yarn group across 3 directories with 2 updates'
+- Pattern in commits.prefixes
+
